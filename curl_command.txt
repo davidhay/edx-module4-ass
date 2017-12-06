@@ -1,0 +1,7 @@
+curl -X GET http://localhost:3000/accounts
+
+curl -X DELETE http://localhost:3000/accounts/ID
+
+curl -H "Content-Type: application/json" -X POST -d '{"balance": "1000", "name": "savings"}' "http://localhost:3000/accounts"
+
+curl -H "Content-Type: application/json" -X PUT -d '{"balance": "1000.11", "name": "savings123"}' "http://localhost:3000/accounts/ID"
